@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+li, a, button{
+	outline: none;
+	cursor: pointer;
+}
+
+input{
+	outline: none;
+	display: block;
+    width: 100%;
+	box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+}
+
+#logo{
+	color: #cc3300;
+	margin: auto;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Sofia', cursive;
+}
+
+#avatar{
+	position: absolute;
+	top: 2px;
+	right: 20px;
+	cursor: pointer;
+}
+
+#avatar:hover{
+	border-radius: 50%;
+	background-color: #f2f2f2;
+}
+
+header{
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,.2), 0 3px 3px -2px rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+    height: 56px;
+}
+
+.add-task{
+	margin: auto;
+	width: 730px;
+	height: 390px;
+	border: 1px solid #b3b3b3;
+	border-radius: 20px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.tasks-heading{
+	font-size: 25px;
+	font-weight: bold;
+	color: #cc3300;	
+}
+
+#labelone{
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #008cb3;
+}
+
+#labeltwo{
+	margin-top: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #008cb3;
+}
+
+#add-task-button{
+	margin: auto;
+	display: block;
+	font-size: 17px;
+	width: 180px;	
+	margin-top: 50px;
+	font-weight: bold;
+	border-radius: 5px;
+    background: #79589F;
+    border-color: #79589F;
+    border-width: 2px;
+}
+
+#add-task-button:hover{
+	background: #644884;
+    border-color: #644884;
+}
+
+#add-task-button:focus{
+	box-shadow: none;
+}
+
+.user-tasks{
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	width: 1000px;
+	margin: auto;
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+.tasks-tabs{
+	margin: auto;
+	width: 271.5px;
+}
+
+.nav-tabs{
+  	background-color: #eff2f5;
+  	border-bottom: none;  	
+  	width: 100%;
+}
+
+.nav-tabs .nav-item .active  {
+	background-color: #fff;
+ 	border-top-color: #cc2900;
+ 	border-top-width: 3px;
+}
+
+.nav-link{
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link:hover{
+	color: #cc2900;
+}
+
+.table-bordered{
+	border-right: none !important;
+	border-left: none !important;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+#dueTask{
+	font-size: 25px;
+	color: #000099;
+	font-weight: bold;	
+}
+
+#dueTime{
+	font-size: 25px;
+	color: #ff3300;
+	font-weight: bold;
+}
+
+#completeTask{
+	font-size: 20px;
+	transition: 1s;
+}
+
+#completeTask:hover{
+	transform: scale(1.05,1.05);
+}
+
+#compTask{
+	font-size: 25px;
+	color: #000099;
+	font-weight: bold;
+}
+
+#compTime{
+	font-size: 25px;
+	color: #ff3300;
+	font-weight: bold;
+}
+
+#deleteTask{
+	font-size: 20px;
+	width: 150px;
+	transition: 1s;
+}
+
+#deleteTask:hover{
+	transform: scale(1.05,1.05);
+}

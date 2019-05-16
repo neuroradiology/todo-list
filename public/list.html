@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<link rel="icon" href="assets/img/favicon.png">
+		<title>toDo List</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<script>if (!localStorage.getItem('token')) {window.location = "/";}else {}</script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel='stylesheet' href='utils/nprogress/nprogress.css'/>
+		<link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/list.css">	
+		<link rel="stylesheet" type="text/css" href="assets/styles/listmdqueries.css">		
+	</head>
+	<body>
+		<header>
+			<h6 id="logo">toDo List</h6>
+			<img id="avatar" class="mt-1" src="assets/img/avatar.png" data-toggle="dropdown">
+				<div class="dropdown-menu">
+					<div class="dropdown-divider"></div>
+					<button class="dropdown-item disabled"><span class="text-center" id="username" style="color: #000000; font-size: 17px; font-weight: bold;"></span></button>
+					<div class="dropdown-divider"></div>
+					<button class="text-center dropdown-item" type="button" onclick="logout();" style="font-size: 17px;"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</button>
+				</div>			
+		</header>
+		<section class="add-task mt-5 container mx-auto">
+			<h3 class="tasks-heading text-center mt-3">Add a Task. Or Two. Or Three.</h3>
+			<form class="form-group" id="taskForm">
+				<label id="labelone">What would you like to do?</label>
+					<input class="form-control" type="text" id="task-name" name="taskname" placeholder="Input task..." required>
+				<label id="labeltwo">When would you like to accomplish your task?</label>
+					<input class="form-control" type="text" id="task-time" name="tasktime" placeholder="Pick the date..." required>
+				<button id="add-task-button" class="btn btn-primary text-center" onclick="validateInputs3(); window.location.reload();" type="submit">Add Task</button>
+			</form>			
+		</section>
+		<section class="user-tasks">		
+			<div class="tasks-tabs">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#due-tasks" role="tab">Due Tasks</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#completed-tasks" role="tab">Completed Tasks</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container tab-content">
+				<div class="tab-pane fade show active" id="due-tasks" role="tabpanel">					
+					<img style="display: block; margin: auto;" class="mt-5" id="due-tasks-image" src="assets/img/tasks/no-due-yet.png">
+					<table id="dueTasksTable" style="display: none;" class="d-flex justify-content-center table table-bordered mt-4 mb-3"><tbody id="dueTasksBody"></tbody></table>
+				</div>
+				<div class="tab-pane fade" id="completed-tasks" role="tabpanel">					
+					<img style="display: block; margin: auto;" class="mt-5" id="completed-tasks-image" src="assets/img/tasks/no-completed-yet.png">
+					<table id="completedTasksTable" style="display: none;" class="d-flex justify-content-center table table-bordered mt-4 mb-3"><tbody id="completedTasksBody"></tbody></table>
+				</div>
+			</div>
+		</section>		
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="utils/jwt-decode/build/jwt-decode.min.js"></script>
+	<script src='utils/nprogress/nprogress.js'></script>
+	<script src="https://unpkg.com/js-datepicker"></script>
+	<script src="assets/js/list.js"></script>
+	<script src="assets/js/taskcalls.js"></script>
+	</body>	
+</html>
+

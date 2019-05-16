@@ -1,0 +1,254 @@
+@media only screen and (max-width : 520px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 485px;
+	}
+}
+
+@media only screen and (max-width : 500px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 470px;
+	}
+}
+
+@media only screen and (max-width : 490px){
+	.fieldsetOne{
+		width: 460px;
+		height: 340px;
+	}
+	.fieldsetTwo{
+		width: 460px;
+		height: 410px; 
+	}
+}
+
+@media only screen and (max-width : 480px){
+	.fieldsetOne{
+		width: 450px;
+		height: 340px;
+	}
+	.fieldsetTwo{
+		width: 450px;
+		height: 400px; 
+	}
+}
+
+@media only screen and (max-width : 470px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 445px;
+	}
+}
+
+@media only screen and (max-width : 460px){
+	.fieldsetOne{
+		width: 435px;
+		height: 335px;
+	}
+	.fieldsetTwo{
+		width: 435px;
+		height: 395px; 
+	}
+}
+
+@media only screen and (max-width : 455px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 430px;
+	}
+}
+
+@media only screen and (max-width : 450px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 425px;
+	}
+}
+
+@media only screen and (max-width : 445px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 420px;
+	}
+	#log-in-button, #sign-up-button{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width : 440px){
+	.fieldsetOne{
+		width: 415px;
+		height: 330px;
+	}
+	.fieldsetTwo{
+		width: 415px;
+		height: 390px; 
+	}
+}
+
+@media only screen and (max-width : 435px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 405px;
+	}
+	#log-in-button, #sign-up-button{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width : 425px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 395px;
+	}
+}
+
+@media only screen and (max-width : 415px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 380px;
+	}
+	#log-in-button, #sign-up-button{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width : 400px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 370px;
+	}
+}
+
+@media only screen and (max-width : 390px){
+	.fieldsetOne{
+		width: 360px;
+		height: 320px;
+	}
+	.fieldsetTwo{
+		width: 360px;
+		height: 375px; 
+	}
+}
+
+@media only screen and (max-width : 380px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 350px;
+	}
+}
+
+@media only screen and (max-width : 370px){
+	.fieldsetOne{
+		width: 340px;
+		height: 315px;
+	}
+	.fieldsetTwo{
+		width: 340px;
+		height: 360px; 
+	}
+	.sign-up-link{
+		margin-top: 30px;
+	}
+	 .log-in-link{
+		margin-top: 30px;
+	 }
+}
+
+@media only screen and (max-width : 360px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 330px;
+	}
+}
+
+@media only screen and (max-width : 350px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 320px;
+	}
+}
+
+@media only screen and (max-width : 340px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 310px;
+	}
+}
+
+@media only screen and (max-width : 330px){
+	.fieldsetOne{
+		width: 300px;
+		height: 310px;
+	}
+	.fieldsetTwo{
+		width: 300px;
+		height: 350px; 
+	}
+	.sign-up-link{
+		margin-top: 24px;
+	}
+	.log-in-link{
+		margin-top: 25px;
+	}
+}
+
+@media only screen and (max-width : 320px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 290px;
+	}
+}
+
+@media only screen and (max-width : 310px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 280px;
+	}
+}
+
+@media only screen and (max-width : 300px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 270px;
+	}
+}
+
+@media only screen and (max-width : 290px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 260px;
+	}
+}
+
+@media only screen and (max-width : 280px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 250px;
+	}
+	.sign-up-link{
+		font-size: 18px;
+	}
+	.log-in-link{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width : 270px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 240px;
+	}
+	.sign-up-link{
+		font-size: 18px;
+	}
+	.log-in-link{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width : 260px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 230px;
+	}
+	.sign-up-link{
+		font-size: 18px;
+	}
+	.log-in-link{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width : 250px){
+	.fieldsetOne, .fieldsetTwo{
+		width: 220px;
+	}
+	.sign-up-link{
+		font-size: 18px;
+	}
+	.log-in-link{
+		font-size: 18px;
+	}
+}
+

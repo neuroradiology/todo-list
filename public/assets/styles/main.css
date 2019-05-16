@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-x: hidden;	
+}
+
+li, a, button{
+	outline: none;
+	cursor: pointer;
+}
+
+input{
+	outline: none;	
+	box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+}
+
+#logo{
+	color: #cc3300;
+	margin: auto;
+	text-align: center;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,.2), 0 3px 3px -2px rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12); 
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Sofia', cursive;   
+}
+
+.fieldsetOne{
+	position: relative;
+	margin-top: 50px;
+	border: 1px solid #c8c7cc;
+	width: 500px;
+	height: 350px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#border-text-one{	
+	width: auto;
+	color: #cc3300;
+	font-size: 17px;
+}
+
+input[type=email], input[type=password], input[type=text]{
+	padding-left: 50px;
+}
+
+.email-input{
+  	position: relative;
+}
+
+.email-input i{
+	position: absolute;
+	left: 0;
+	color: grey;
+	top: 4px;
+	padding: 9px 15px;
+}
+
+.password-input{
+	position: relative;
+}
+
+.password-input i{
+	position: absolute;
+	left: 0;
+	color: grey;
+	top: 4px;
+	padding: 9px 15px;
+}
+
+.password-input .fa-eye{	
+	display: none;
+	position: absolute;
+	top: 4px;
+	right: 0;
+	padding: 9px 15px;
+	color: grey;
+}
+
+.password-input .fa-eye:hover{
+	cursor: pointer;
+	color: #4d4dff;
+}
+
+.password-input .fa-eye-slash{
+	position: absolute;
+	top: 4px;
+	right: 0;
+	padding: 9px 15px;
+	color: grey;
+}
+
+.password-input .fa-eye-slash:hover{
+	cursor: pointer;
+	color: #4d4dff;
+}
+
+.password-sign-up .fa-eye{	
+	display: none;
+	position: absolute;
+	top: 4px;
+	right: 0;
+	padding: 9px 15px;
+	color: grey;
+}
+
+.password-sign-up .fa-eye:hover{
+	cursor: pointer;
+	color: #4d4dff;
+}
+
+.password-sign-up .fa-eye-slash{
+	position: absolute;
+	top: 4px;
+	right: 0;
+	padding: 9px 15px;
+	color: grey;
+}
+
+.password-sign-up .fa-eye-slash:hover{
+	cursor: pointer;
+	color: #4d4dff;
+}
+
+#log-in-button{
+	margin: auto;
+	display: block;
+    text-align: center;  
+    font-family: 'Source Sans Pro', sans-serif; 
+    width: 100%;
+    font-size: 20px;
+    background: #2c963f;
+    border-color: #2c963f;
+}
+
+#log-in-button:hover{
+	background: #288a3a;
+    border-color: #288a3a;
+}
+
+#log-in-button:focus{
+	box-shadow: none;
+}
+
+#sign-up-button{
+	margin: auto;
+	display: block;
+    text-align: center;  
+    font-family: 'Source Sans Pro', sans-serif; 
+    width: 100%;
+    font-size: 20px;
+    background: #2c963f;
+    border-color: #2c963f;
+}
+
+#sign-up-button:hover{
+	background: #288a3a;
+    border-color: #288a3a;
+}
+
+#sign-up-button:focus{
+	box-shadow: none;
+}
+.sign-up-link{
+	margin-top: 48px;
+	text-align: center;
+}
+
+.fieldsetTwo{
+	position: relative;
+	margin-top: 50px;
+	border: 1px solid #c8c7cc;
+	width: 500px;
+	height: 420px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+#border-text-two{	
+	width: auto;
+	color: #cc3300;
+	font-size: 17px;
+}
+
+.username-sign-up{
+	position: relative;
+}
+
+.username-sign-up i{
+	position: absolute;
+	left: 0;
+	color: grey;
+	top: 4px;
+	padding: 9px 15px;
+}
+
+.email-sign-up{
+	position: relative;
+}
+
+.email-sign-up i{
+	position: absolute;
+	left: 0;
+	color: grey;
+	top: 4px;
+	padding: 9px 15px;
+}
+
+.password-sign-up{
+	position: relative;
+}
+
+.password-sign-up i {
+	position: absolute;
+	left: 0;
+	color: grey;
+	top: 4px;
+	padding: 9px 15px;
+}
+
+#sign-up-password:focus{
+	box-shadow: none;
+}
+
+.log-in-link{
+	margin-top: 48px;
+	text-align: center;
+}
+
+#sign-up{
+	display: none;
+}
+
