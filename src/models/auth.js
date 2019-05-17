@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const mysql = require('mysql');
 const db = require('./users');
-const jwtkey = <INSERT JWT SECRET KEY>;
+const jwtkey = <INSERT JSON WEB TOKEN SECRET KEY>;
 
 exports = loginUser = (req,res) => {
 	const signInEmail = req.body.signInEmail;
