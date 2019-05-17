@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 options = {
-	host: <INSERT DATABASE HOST URI>,
+	host: <INSERT MYSQL DATABASE HOST URI>,
 	user: <INSERT USERNAME>,
 	password: <INSERT USER PASSWORD>,
 	database: 'todolist'
