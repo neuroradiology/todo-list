@@ -17,7 +17,7 @@ db.connect((err) => {
 	console.log("MySQL Connection Established.");			                           
 });
 
-/* ==== AN ALTERNATIVE OF CREATING A MYSQL CONNECTION TO HANDLE AUTOMATIC DATABASE DISCONNECTS ====
+/* ==== AN ALTERNATIVE OF CREATING A MYSQL CONNECTION THAT HANDLES AUTOMATIC DATABASE DISCONNECTIONS ====
 const db = mysql.createConnection(options);	
 const handleDisconnect = () => {
 	db.connect((err) => {              
