@@ -17,6 +17,28 @@ db.connect((err) => {
 	console.log("MySQL Connection Established.");			                           
 });
 
+/* ==== AN ALTERNATIVE OF CREATING A MYSQL CONNECTION TO HANDLE AUTOMATIC DATABASE DISCONNECTS ====
+const db = mysql.createConnection(options);	
+const handleDisconnect = () => {
+	db.connect((err) => {              
+		if(err) {                                     
+			console.log('error when connecting to db:', err);
+			setTimeout(handleDisconnect, 1000); 
+		}
+		console.log("MySQL Connection Established.");                                     
+  	});                                                                             
+	db.on('error', (err) => {
+		console.log('db error', err);
+		if(err.code === 'PROTOCOL_CONNECTION_LOST') { 
+      		handleDisconnect();                         
+   		} else {                                      
+			throw err;                                  
+		}
+	});
+};
+handleDisconnect();
+*/
+
 const email = fs.readFileSync(path.join(__dirname, '../email/email.html'))					   			
 	const transporter = nodemailer.createTransport({
 		service: <INSERT EMAIL SERVICE PROVIDER>,
