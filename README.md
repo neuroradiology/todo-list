@@ -13,7 +13,7 @@ Try it out here - [toDo List website](https://todo-list-website.herokuapp.com/)
 
 * [MongoDB](https://www.mongodb.com/) for storage of users' tasks.<br>
 
-* Install the dependecies  
+* The application dependecies  
   ```
   $ npm install
   ```
