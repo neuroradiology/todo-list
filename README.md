@@ -7,7 +7,7 @@ Try it out here - [toDo List website](https://todo-list-website.herokuapp.com/)
 ## Prerequisites
 * [Node.js](https://nodejs.org/en)<br>
 
-* [MySQL](https://www.mysql.com/) for storage of users' registration data.<br>
+* [MySQL](https://www.mysql.com/) for persistence of users' registration data.<br>
 
 * An understanding of [JSON Web Tokens](https://jwt.io/) to handle user logins.<br>
 
