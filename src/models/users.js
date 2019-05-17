@@ -89,5 +89,3 @@ exports = registerUser = (req,res) => {
 		};
 	});		
 };
-
-module.exports = db;
