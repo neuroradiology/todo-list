@@ -7,11 +7,11 @@ Try it out here - [toDo List website](https://todo-list-website.herokuapp.com/)
 ## Prerequisites
 * [Node.js](https://nodejs.org/en)<br>
 
-* [MongoDB](https://www.mongodb.com/) for storage of users' tasks.<br>
-
 * [MySQL](https://www.mysql.com/) for storage of users' registration data.<br>
 
-* A bit knowledge about [JSON Web Tokens](https://jwt.io/) to handle user logins.<br>
+* Basic understanding of [JSON Web Tokens](https://jwt.io/) to handle user logins.<br>
+
+* [MongoDB](https://www.mongodb.com/) for storage of users' tasks.<br>
 
 * Install the dependecies  
   ```
