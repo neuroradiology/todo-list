@@ -1,6 +1,6 @@
 const mongo = require('mongodb').MongoClient;
 
-const url = <INSERT MONGODB URI>;
+const url = <INSERT MONGODB DATABASE URI>;
 const dbName = 'tasks';
 mongo.connect(url, {useNewUrlParser: true}, (err,client) => {
 	if (err) throw err;	
