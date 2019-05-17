@@ -1,9 +1,13 @@
 # toDo List website
-A is a beautifully designed to-do list app for your browser that makes it easy and fun to get stuff done. todo-list web application that makes it lets you keep track of all your tasks in one place seamlesslyaccessible everywhere.
+A beautifully designed to-do list web application incorporating a user registration and login system that makes it easy to get stuff done and keep track of all your tasks in one place.
 
-## Usage
-Try it out here - [toDo List](https://todo-list-app-nodejs.herokuapp.com/)
+Try it out here - [toDo List website](https://todo-list-app-nodejs.herokuapp.com/)
 
+## Directory Structure
+* public
+  *
+* src
+  *
 ## Prerequisites
 * [Node.js](https://nodejs.org/en)<br>
 
