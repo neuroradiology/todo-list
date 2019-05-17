@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const jwtkey = <INSERT JWT SECRET KEY>;
+const jwtkey = <INSERT JSON WEB TOKEN SECRET KEY>;
 
 module.exports = (req, res, next) => {
     try {
