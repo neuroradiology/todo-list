@@ -5,34 +5,21 @@ const fs = require('fs');
 const path = require('path');
 
 options = {
-	host: <INSERT SERVER HOST URI>,
-	user: <INSERT USER NAME>,
+	host: <INSERT DATABASE HOST URI>,
+	user: <INSERT USERNAME>,
 	password: <INSERT USER PASSWORD>,
 	database: 'todolist'
 };
-const handleDisconnect = () => {
-	exports = db = mysql.createConnection(options); 
-	db.connect((err) => {              
-		if(err) {                                     
-			console.log('error when connecting to db:', err);
-			setTimeout(handleDisconnect, 2000); 
-		}
-		console.log("MySQL Connection Established.");                                     
-  	});                                                                             
-	db.on('error', (err) => {
-		console.log('db error', err);
-		if(err.code === 'PROTOCOL_CONNECTION_LOST') { 
-      		handleDisconnect();                         
-   		} else {                                      
-			throw err;                                  
-		}
-	});
-};
-handleDisconnect();
+
+const db = mysql.createConnection(options);	
+db.connect((err) => {												
+	if (err) throw err;		            
+	console.log("MySQL Connection Established.");			                           
+});
 
 const email = fs.readFileSync(path.join(__dirname, '../email/email.html'))					   			
 	const transporter = nodemailer.createTransport({
-		service: <INSERT EMAIL SERVICE>,
+		service: <INSERT EMAIL SERVICE PROVIDER>,
 		auth: {
 		    user: <INSERT EMAIL ADDRESS>,
 		    pass: <INSERT EMAIL PASSWORD>
@@ -64,28 +51,31 @@ exports = registerUser = (req,res) => {
 				const salt = bcrypt.genSaltSync(10);
 				const hash = bcrypt.hashSync(signUpPassword, salt);
 		    	const hashedPassword = hash;     	
-		    	console.log('Password Hashed.')
-			let sqlone = 'CREATE DATABASE IF NOT EXISTS todolist';
-			db.query(sqlone, (err, result) => {
-        		if(err) throw err;
-        			console.log('Database Created.');
-    		});
-    			let sqltwo = 'CREATE TABLE IF NOT EXISTS users(username VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL)';
-    			db.query(sqltwo, (err,result) =>{
-    				if(err) throw err;
-        			console.log('Table Created.');
-    			});
-    				let sqlthree = `INSERT INTO users(username, email, password) VALUES ('${signUpUsername}', '${signUpEmail}', '${hashedPassword}')`;
-    				db.query(sqlthree, (err,result) =>{
-    				if(err) throw err;
-        			console.log('Data Inserted.');        			
-    			});    				 
-						transporter.sendMail(mailOptions, (err, info) => {
-						   	if(err) throw err;
-						    console.log('Email Sent.');
-							res.send('successful registration');  
-						});					
+		    	console.log('Password Hashed.')    	
+				let sqlone = 'CREATE DATABASE IF NOT EXISTS todolist';
+				db.query(sqlone, (err, result) => {
+	        		if(err) throw err;
+	        			console.log('Database Created.');
+	    		});
+	    			let sqltwo = 'CREATE TABLE IF NOT EXISTS users(username VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL)';
+	    			db.query(sqltwo, (err,result) =>{
+	    				if(err) throw err;
+	        			console.log('Table Created.');
+	    			});
+
+	    				let sqlthree = `INSERT INTO users(username, email, password) VALUES ('${signUpUsername}', '${signUpEmail}', '${hashedPassword}')`;
+	    				db.query(sqlthree, (err,result) =>{
+	    				if(err) throw err;
+	        			console.log('Data Inserted.');        			
+	    			});    				 
+							transporter.sendMail(mailOptions, (err, info) => {
+							   	if(err) throw err;
+							    console.log('Email Sent.');
+								res.send('successful registration');  
+							});					
 			};
 		};
 	});		
 };
+
+module.exports = db;
