@@ -11,33 +11,7 @@ options = {
 	database: 'todolist'
 };
 
-const db = mysql.createConnection(options);	
-db.connect((err) => {												
-	if (err) throw err;		            
-	console.log("MySQL Connection Established.");			                           
-});
-
-/* ==== AN ALTERNATIVE OF CREATING A MYSQL CONNECTION THAT HANDLES AUTOMATIC DATABASE DISCONNECTIONS ====
-const db = mysql.createConnection(options);	
-const handleDisconnect = () => {
-	db.connect((err) => {              
-		if(err) {                                     
-			console.log('error when connecting to db:', err);
-			setTimeout(handleDisconnect, 1000); 
-		}
-		console.log("MySQL Connection Established.");                                     
-  	});                                                                             
-	db.on('error', (err) => {
-		console.log('db error', err);
-		if(err.code === 'PROTOCOL_CONNECTION_LOST') { 
-      		handleDisconnect();                         
-   		} else {                                      
-			throw err;                                  
-		}
-	});
-};
-handleDisconnect();
-*/
+const db = mysql.createPool(options);
 
 const email = fs.readFileSync(path.join(__dirname, '../email/email.html'))					   			
 	const transporter = nodemailer.createTransport({
