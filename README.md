@@ -5,13 +5,13 @@ A web application incorporating a user registration and login system that makes 
 Try it out here - [toDo List](https://todo-list-website.herokuapp.com/)
 
 ## Prerequisites
-* [Node.js](https://nodejs.org/en)<br>
+* Node.js<br>
 
-* [MySQL](https://www.mysql.com/) for persistence of users' registration data.<br>
+* MySQL for persistence of users' registration data.<br>
 
-* An understanding of [JSON Web Tokens](https://jwt.io/) to handle user logins.<br>
+* An understanding of JSON Web Tokens to handle user logins.<br>
 
-* [MongoDB](https://www.mongodb.com/) for storage of users' tasks.<br>
+* MongoDB for storage of users' tasks.<br>
 
 * The application dependecies  
   ```
