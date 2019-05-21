@@ -5,7 +5,7 @@ function register(e) {
 	const signUpPassword = document.getElementById('sign-up-password').value;
 		validateInputs2();
 		NProgress.configure({ showSpinner: false });
-		NProgress.configure({ ease: 'ease', speed: 30000 });
+		NProgress.configure({ ease: 'ease', speed: 10000 });
 			NProgress.start();
 			NProgress.done();
 	const xhr2 = new XMLHttpRequest();		
